@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushant's Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="nav-bar">
+                <div class="logo">
+                    <span class="logo-text">Sushant Patil</span>
+                </div>
+                <div class="nav-links">
+                    <a href="{{ url_for('work') }}">Works</a>
+                    <a href="{{ url_for('resume') }}">Resume</a>
+                    <a href="#">Connect</a>
+                    <a href="{{ url_for('personal') }}">Personal</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section class="main-section">
+        <div class="container">
+            <div class="profile">
+                <div class="text-section">
+                    <h1>It's me</h1>
+                    <h2>Sushant</h2>
+                    <p>Software Developer</p>
+                    <p>Skilled in Machine Learning, Python, and building web applications. Passionate about solving real-world problems with technology.</p>
+                    <a href="#contact" class="btn">Let's Talk</a>
+                </div>
+                <div class="image-section">
+                    <img src="{{ url_for('static', filename='./images/B-01-01.jpeg') }}" alt="Sushant">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

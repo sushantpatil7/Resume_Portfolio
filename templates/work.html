@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushant's Works</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='work.css') }}">
+
+    <!-- <link rel="stylesheet" href="work.css"> -->
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="nav-bar">
+                <div class="logo">
+                    <span class="logo-text">Sushant Patil</span>
+                </div>
+                <div class="nav-links">
+                    <a href="{{ url_for('home') }}">Home</a>
+                    <a href="{{ url_for('work') }}">Works</a>
+                    <a href="{{ url_for('resume') }}">Resume</a>
+                    <a href="#">Connect</a>
+                    <a href="{{ url_for('personal') }}"> Personal</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="projects-section">
+        <div class="container">
+            <h2>My Projects and Experience</h2>
+
+            <div class="internship">
+                <h3>Training</h3>
+                <h4>Softron Training Center</h4>
+                <p><em>June 2020 – Aug 2020, Kolhapur</em></p>
+                <ul>
+                    <li>Completed a comprehensive training program focused on Python from the ground up.</li>
+                    <li>Developed practical skills through hands-on projects, applying Python to solve real-world problems.</li>
+                    <li>Gained invaluable insights from the experienced Softron team, enhancing my programming foundation.</li>
+                </ul>
+            </div>
+
+            <div class="internship">
+                <h3>Intern</h3>
+                <h4>Chatak Innovations LLP</h4>
+                <p><em>May 2023 – July 2023, Sangli</em></p>
+                <ul>
+                    <li>Contributed to the Agriculture Drone project in the R&D department.</li>
+                    <li>Acquired machine learning knowledge while collaborating with Chatak's development team.</li>
+                    <li>Played a key role in the development and testing of drone software, optimizing performance and integrating machine learning models for enhanced crop monitoring and analysis.</li>
+                </ul>
+            </div>
+
+            <div class="projects">
+                <h3>Projects</h3>
+                
+                <div class="project">
+                    <h4>Spotify Clone App | Full Stack</h4>
+                    <p><strong>Tech Stack:</strong> CSS, HTML, JavaScript</p>
+                    <p>A Spotify clone designed to provide ad-free music streaming to users. The app allows users to play and listen to their favorite music with a single click, developed according to industry standards.</p>
+                    <div class="links">
+                        <a href="https://github.com/yourgithub/spotify-clone" target="_blank">
+                            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="24">
+                        </a>
+                       
+                    </div>
+                </div>
+
+                <div class="project">
+                    <h4>Recipe Generation from Food Images</h4>
+                    <p><strong>Tech Stack:</strong> Python, Machine Learning, NLP, Deep Learning (e.g., NumPy, Pandas)</p>
+                    <p>Developed a system using deep learning and machine learning to generate textual recipes from food images. Integrated CNNs and transformer models for accurate recipe prediction, analyzing data to identify ingredients and suggest recipes. Collaborated with a team to enhance accuracy and user experience.</p>
+                    <div class="links">
+                        <a href="https://github.com/yourgithub/recipe-generator" target="_blank">
+                            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="24">
+                        </a>
+                       
+                    </div>
+                </div>
+
+                <div class="project">
+                    <h4>Insurance Premium Predictor</h4>
+                    <p><strong>Tech Stack:</strong> Python, Machine Learning, Flask, SQL</p>
+                    <p>Created an insurance premium prediction web application that estimates premium amounts based on user profiles and personal data. Leveraged machine learning algorithms to suggest relevant insurance plans, optimizing the user experience and decision-making process.</p>
+                    <div class="links">
+                        <a href="https://github.com/yourgithub/insurance-predictor" target="_blank">
+                            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="24">
+                        </a>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

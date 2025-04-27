@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushant Patil - Resume</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='resume.css') }}">
+
+<!-- <link rel="stylesheet" href="resume.css"> -->
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="nav-bar">
+                <div class="logo">
+                    <span class="logo-text">Sushant Patil</span>
+                </div>
+                <div class="nav-links">
+                    <a href="{{ url_for('home') }}">Home</a>
+                    <a href="{{ url_for('work') }}">Works</a>
+                    <a href="{{ url_for('resume') }}">Resume</a>
+                    <a href="#">Connect</a>
+                    <a href="{{ url_for('personal') }}"> Personal</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+     <main>
+        <section class="education">
+            <h2>Education</h2>
+            <div class="edu-entry">
+                <h3>B. TECH – CSE (AIML)</h3>
+                <p>SSPM COE, Kankavli, Maharashtra</p>
+                <p>Feb 2022 - May 2024 | CGPA: 7.83</p>
+            </div>
+            <div class="edu-entry">
+                <h3>MSBTE - CSE</h3>
+                <p>TKIETP, Warananagar, Maharashtra</p>
+                <p>June 2018 - Aug 2021 | Percentage: 79.37%</p>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Languages: Python, SQL, C++</li>
+                <li>Web Development: JavaScript, Angular, React Js, CSS, REST API</li>
+                <li>Databases: MySQL, MongoDB</li>
+            </ul>
+        </section>
+
+        <section class="organizations">
+            <h2>Organizations</h2>
+            <ul>
+                <li><strong>UTUNG, SSPM</strong> - Event Management Team Member</li>
+                <li><strong>Virtuosic, SSPM</strong> - Design Head</li>
+                <li><strong>NSS, SSPM</strong> - Core Committee Member</li>
+            </ul>
+        </section>
+
+        <section class="interests">
+            <h2>Interests</h2>
+            <ul>
+                <li>Swimming</li>
+                <li>Gaming</li>
+                <li>Travelling</li>
+                <li>Running</li>
+            </ul>
+        </section>
+
+        <section class="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Full Stack Web Development (MERN Stack) - PrepInsta</li>
+                <li>Python for Everybody - University of Michigan (Coursera)</li>
+                <li>Machine Learning & AI - PrepInsta</li>
+            </ul>
+        </section>
+
+        <section class="achievements">
+            <h2>Achievements</h2>
+            <ul>
+                <li><strong>Python Badge</strong> - 3 STARS on HackerRank</li>
+                <li><strong>Golden Badge in MySQL</strong> - 3 STARS on HackerRank</li>
+            </ul>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
